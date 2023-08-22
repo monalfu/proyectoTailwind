@@ -1,3 +1,8 @@
-@tailwind base;
+/* Inicializa todos los elementos de nuestro HTML sin estilo. */
+@tailwind base; 
+
+/* Nos permite acceder a todas las clases de tailwind */
 @tailwind components;
+
+/* Agrega todas las utilidades al proyecto y nos permite acceder a ellas. */
 @tailwind utilities;
