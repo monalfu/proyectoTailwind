@@ -6,3 +6,7 @@
 
 /* Agrega todas las utilidades al proyecto y nos permite acceder a ellas. */
 @tailwind utilities;
+
+.Card {
+    @apply w-48 h-64 shadow-md rounded-lg overflow-hidden
+}
