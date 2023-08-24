@@ -47,3 +47,7 @@
 .Faqs--info {
     @apply text-base pt-2;
 }
+
+.TapBar--icons {
+    @apply fill-current text-gray-300;
+}
