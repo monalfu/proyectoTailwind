@@ -13,7 +13,7 @@
     <nav></nav>
     <div id="tab_bar"></div>
 
-    <section class="w-full h-screen">
+    <section class="w-full h-auto">
         <div id="home">
             <div class="w-full h-3/4">
                 <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center">
@@ -25,6 +25,8 @@
                 </div>
             </div>
         </div>
+
+        <!-- RECOMENDADAS -->
         <div class="p-3" id="recomendados">
             <p class="text-3xl font-semibold text-primary">Recomendados</p>
             <div class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain overflow-y-hidden flex space-x-4">
@@ -122,7 +124,9 @@
 
             </div>
         </div>
-        <div class="px-2 h-full w-full" id="rentas_recomendadas">
+
+        <!-- RENTAS DESTACADAS -->
+        <div class="px-2 h-auto w-full" id="rentas_destacadas">
           <p class="text-3xl text-primary font-semibold pb-6 mt-6">Rentas destacadas</p>
           <div class="w-full h-full flex flex-col space-y-6 items-center justify-center">
             <div class="w-full h-96 bg-chicago bg-cover rounded-xl">
@@ -135,10 +139,46 @@
             </div>
           </div>
         </div>
+
+        <!-- FAQS -->
+        <div class="w-full-h-full" id="faqs">
+          <div class="w-full h-full px-6 flex flex-col space-y-4">
+            <p class="text-3xl text-primary font-semibold mt-6">FAQS</p>
+            <div>
+              <p class="Faqs--type">Política de cancelación</p>
+              <p class="Faqs--info">Para estancias menores a una semana es importante avisar con 3 días de anticipación, de caso contario será sancionado.</p>
+            </div>
+            <div>
+              <p class="Faqs--type">Métodos de pago</p>
+              <p class="Faqs--info">Aceptamos distintos métodos de pago: VISA, MasterCard, American Express, Paypal y Binance</p>
+            </div>
+            <div>
+              <p class="Faqs--type">Mascotas</p>
+	            <p class="Faqs--info">El tema de las mascotas dependerá directamente del anfitrión.</p>
+            </div>
+            <div>
+              <p class="Faqs--type">Información de Seguridad</p>
+              <p class="Faqs--info">Todas nuestras estancias cuentan con seguro en caso de accidentes</p>
+            </div>
+            <div>
+              <p class="Faqs--type">Estancias Largas</p>
+              <p class="Faqs--info">Contamos con estancias de hasta 3 meses, en este caso es requerido un anticipo con un monto del 50% del valor de la renta
+              </p>
+            </div>
+          </div>
+
+        </div>
+
     </section>
     
-    <footer>
-
+    <!-- FOOTER -->
+    <footer class="w-full h-auto bg-gray-50 p-6 space-y-3">
+      <p class="text-lg text-gray-400">Acerca de</p>
+      <p class="text-sm text-gray-300">Inversionistas</p>
+      <p class="text-sm text-gray-300">Empleos</p>
+      <p class="text-sm text-gray-300">Términos y condiciones</p>
+      <p class="text-sm text-gray-300">Platzi Travel, Inc.</p>
+      <p class="text-sm text-gray-300">Síguenos</p>
     </footer>
 </body>
 </html>

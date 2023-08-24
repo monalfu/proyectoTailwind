@@ -39,3 +39,11 @@
 .CardTitle {
     @apply text-3xl px-8 pt-8 pb-2 font-semibold text-white
 }
+
+.Faqs--type {
+    @apply text-xl font-medium text-primary;
+}
+
+.Faqs--info {
+    @apply text-base pt-2;
+}
