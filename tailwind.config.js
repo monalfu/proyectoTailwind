@@ -1,3 +1,5 @@
+const { text } = require('express');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
