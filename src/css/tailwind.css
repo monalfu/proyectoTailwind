@@ -70,5 +70,5 @@
 }
 
 .TapBar--icons {
-    @apply fill-current text-black lg:text-primary dark:text-gray-200 z-50;
+    @apply fill-current text-primary lg:text-primary dark:text-gray-200 z-50;
 }
