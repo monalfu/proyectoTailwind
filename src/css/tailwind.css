@@ -8,11 +8,15 @@
 @tailwind utilities;
 
 .Section {
-    @apply h-auto w-full lg:pt-14 lg:px-8;
+    @apply h-auto w-full px-2 lg:pt-14 lg:px-8;
 }
 
-.Card {
-    @apply w-48 h-64 shadow-md rounded-lg overflow-hidden flex-none transform transition-all hover:-translate-y-4 hover:shadow-xl
+.Section--title {
+    @apply text-3xl font-semibold text-primary dark:text-white;
+}
+
+.Card--recomendadas {
+    @apply w-48 h-64 shadow-md rounded-lg overflow-hidden flex-none transform transition-all hover:-translate-y-4 hover:shadow-xl;
 }
 
 .Card--cover {
@@ -20,7 +24,7 @@
 }
 
 .Card--info {
-    @apply w-full h-2/5 bg-secondary;
+    @apply w-full h-2/5 bg-secondary dark:bg-gray-700;
 }
 
 .Card--info__title {
@@ -31,27 +35,40 @@
     @apply text-white text-base px-4;
 }
 
-.Card:nth-child(even) .Card--info {
+.Card--recomendadas:nth-child(even) .Card--info {
     @apply bg-white;
 }
 
-.Card:nth-child(even) .Card--info__title,
-.Card:nth-child(even) .Card--info__subtitle {
-    @apply text-terciary;
+.Card--recomendadas:nth-child(even) .Card--info,
+.Card--recomendadas:nth-child(even) .Card--info__title,
+.Card--recomendadas:nth-child(even) .Card--info__subtitle {
+    @apply text-terciary dark:bg-gray-800 dark:text-white;
 }
 
-.CardTitle {
-    @apply text-3xl px-8 pt-8 pb-2 font-semibold text-white lg:drop-shadow-md;
+.Card--destacadas {
+    @apply w-full h-96 mb-4 bg-cover rounded-xl;
+}
+
+.Card--destacadas--info {
+    @apply px-8 pb-5 h-full flex flex-col items-end justify-end;
+} 
+
+.Card--destacadas--info__title {
+    @apply text-3xl pt-8 pb-2 font-semibold text-white lg:drop-shadow-md;
+}
+
+.Card--destacadas--info__details {
+    @apply text-sm text-white;
 }
 
 .Faqs--type {
-    @apply text-xl font-medium text-primary;
+    @apply text-xl font-medium pt-4 text-primary underline dark:text-white;
 }
 
 .Faqs--info {
-    @apply text-base pt-2;
+    @apply text-base pt-2 dark:text-white;
 }
 
 .TapBar--icons {
-    @apply fill-current text-gray-300 active:text-primary focus:text-primary;
+    @apply fill-current text-black lg:text-primary dark:text-gray-200 z-50;
 }
