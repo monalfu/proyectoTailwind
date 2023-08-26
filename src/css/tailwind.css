@@ -7,6 +7,10 @@
 /* Agrega todas las utilidades al proyecto y nos permite acceder a ellas. */
 @tailwind utilities;
 
+.Section {
+    @apply h-auto w-full lg:pt-14 lg:px-8;
+}
+
 .Card {
     @apply w-48 h-64 shadow-md rounded-lg overflow-hidden flex-none transform transition-all hover:-translate-y-4 hover:shadow-xl
 }

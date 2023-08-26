@@ -720,6 +720,10 @@ select {
   left: 0px;
 }
 
+.z-50 {
+  z-index: 50;
+}
+
 .mb-16 {
   margin-bottom: 4rem;
 }
@@ -730,6 +734,10 @@ select {
 
 .mr-24 {
   margin-right: 6rem;
+}
+
+.mt-14 {
+  margin-top: 3.5rem;
 }
 
 .mt-6 {
@@ -772,10 +780,6 @@ select {
   height: 100%;
 }
 
-.w-2\/4 {
-  width: 50%;
-}
-
 .w-48 {
   width: 12rem;
 }
@@ -786,10 +790,6 @@ select {
 
 .w-full {
   width: 100%;
-}
-
-.w-1\/4 {
-  width: 25%;
 }
 
 .transform {
@@ -814,6 +814,12 @@ select {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.space-x-10 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(2.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-x-4 > :not([hidden]) ~ :not([hidden]) {
@@ -848,6 +854,10 @@ select {
 
 .overflow-x-auto {
   overflow-x: auto;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
 .overflow-y-hidden {
@@ -961,19 +971,9 @@ select {
   padding-right: 0.5rem;
 }
 
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 .pb-6 {
@@ -1081,6 +1081,19 @@ select {
 
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.Section {
+  height: auto;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .Section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 3.5rem;
+  }
 }
 
 .Card {
@@ -1250,6 +1263,10 @@ select {
     grid-row: span 2 / span 2;
   }
 
+  .lg\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .lg\:ml-8 {
     margin-left: 2rem;
   }
@@ -1260,6 +1277,10 @@ select {
 
   .lg\:grid {
     display: grid;
+  }
+
+  .lg\:h-0 {
+    height: 0px;
   }
 
   .lg\:h-96 {
@@ -1328,23 +1349,27 @@ select {
     background-position: center;
   }
 
-  .lg\:px-2 {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
-
-  .lg\:px-4 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
   .lg\:px-1 {
     padding-left: 0.25rem;
     padding-right: 0.25rem;
   }
 
+  .lg\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .lg\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
   .lg\:pl-4 {
     padding-left: 1rem;
+  }
+
+  .lg\:pt-14 {
+    padding-top: 3.5rem;
   }
 
   .lg\:pt-16 {
